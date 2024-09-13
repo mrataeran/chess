@@ -21,7 +21,6 @@ public class ChessBoard {
      * @param piece    the piece to add
      */
     public void addPiece(ChessPosition position, ChessPiece piece) {
-//      TODO: implement row and col getters
         board[position.getRow()][position.getColumn()] = piece;
     }
 
