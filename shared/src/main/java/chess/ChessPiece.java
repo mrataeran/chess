@@ -33,9 +33,7 @@ public class ChessPiece {
     /**
      * @return Which team this chess piece belongs to
      */
-    public ChessGame.TeamColor getTeamColor() {
-        throw new RuntimeException("Not implemented");
-    }
+    public ChessGame.TeamColor getTeamColor() { return pieceColor; }
 
     /**
      * @return which type of chess piece this piece is
@@ -47,7 +45,7 @@ public class ChessPiece {
     /**
      * Calculates all the positions a chess piece can move to
      * Does not take into account moves that are illegal due to leaving the king in
-     * danger
+     * danger3
      *
      * @return Collection of valid moves
      */
