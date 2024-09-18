@@ -14,7 +14,6 @@ public class ChessBoard {
     private ChessPiece[][] board = new ChessPiece[8][8];
 
     public ChessBoard() {
-        
     }
 
     /**
@@ -35,7 +34,7 @@ public class ChessBoard {
      * position
      */
     public ChessPiece getPiece(ChessPosition position) {
-        return board[position.getRow()][position.getColumn()];
+        return board[position.getRow() - 1][position.getColumn() - 1];
     }
 
     /**
@@ -43,8 +42,6 @@ public class ChessBoard {
      * (How the game of chess normally starts)
      */
     public void resetBoard() {
-
-        Arrays.fill(board, null);
 
 //        Place the pawns to initial positions
         for (int j = 0; j < 8;  j++) {
